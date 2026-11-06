@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="20 10 580 210" width="900" height="326">
+<title>Haloxx</title>
+<style>
+  .ink path { fill:none; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:1; }
+  .shadow { stroke:#050507; transform:translate(3px,4px); }
+  .main   { stroke:#F6B6CF; filter:drop-shadow(0 0 6px rgba(246,182,207,.4)); }
+  .all     { animation:loopfade 13.0s infinite; }
+  .eclipse { transform-origin:385px 150px; animation:pop 13.0s infinite; }
+  .halo    { transform-origin:385px 150px; animation:spin 30s linear infinite; }
+  .glow    { animation:glow 13.0s infinite; }
+  .spark   { transform-origin:404px 128px; animation:spark 13.0s infinite; }
+  @keyframes spin { to { transform:rotate(360deg); } }
+    @keyframes b14 { 0%,10.77% {opacity:0} 14.62%,100% {opacity:1} }
+  @keyframes b16 { 0%,12.31% {opacity:0} 16.15%,100% {opacity:1} }
+  @keyframes b19 { 0%,14.62% {opacity:0} 18.46%,100% {opacity:1} }
+  @keyframes b21 { 0%,16.15% {opacity:0} 20.00%,100% {opacity:1} }
+  @keyframes b33 { 0%,25.38% {opacity:0} 29.23%,100% {opacity:1} }
+  @keyframes b35 { 0%,26.92% {opacity:0} 30.77%,100% {opacity:1} }
+  @keyframes d2_10 { 0%,1.54% {stroke-dashoffset:1;animation-timing-function:cubic-bezier(.8,0,.2,1)} 9.23%,100% {stroke-dashoffset:0} }
+  @keyframes w2_10 { 0%,4.62% {stroke-width:3;animation-timing-function:cubic-bezier(.8,0,.2,1)} 12.31%,100% {stroke-width:11} }
+  @keyframes o2_10 { 0%,1.54% {opacity:0} 3.08%,100% {opacity:1} }
+  @keyframes d5_8 { 0%,3.85% {stroke-dashoffset:1;animation-timing-function:cubic-bezier(.8,0,.2,1)} 10.00%,100% {stroke-dashoffset:0} }
+  @keyframes w5_8 { 0%,6.92% {stroke-width:3;animation-timing-function:cubic-bezier(.8,0,.2,1)} 13.08%,100% {stroke-width:11} }
+  @keyframes o5_8 { 0%,3.85% {opacity:0} 5.38%,100% {opacity:1} }
+  @keyframes d8_6 { 0%,6.15% {stroke-dashoffset:1;animation-timing-function:cubic-bezier(.8,0,.2,1)} 10.77%,100% {stroke-dashoffset:0} }
+  @keyframes w8_6 { 0%,9.23% {stroke-width:3;animation-timing-function:cubic-bezier(.8,0,.2,1)} 13.85%,100% {stroke-width:11} }
+  @keyframes o8_6 { 0%,6.15% {opacity:0} 7.69%,100% {opacity:1} }
+  @keyframes d12_11 { 0%,9.23% {stroke-dashoffset:1;animation-timing-function:cubic-bezier(.8,0,.2,1)} 17.69%,100% {stroke-dashoffset:0} }
+  @keyframes w12_11 { 0%,12.31% {stroke-width:3;animation-timing-function:cubic-bezier(.8,0,.2,1)} 20.77%,100% {stroke-width:11} }
+  @keyframes o12_11 { 0%,9.23% {opacity:0} 10.77%,100% {opacity:1} }
+  @keyframes d22_7 { 0%,16.92% {stroke-dashoffset:1;animation-timing-function:cubic-bezier(.8,0,.2,1)} 22.31%,100% {stroke-dashoffset:0} }
+  @keyframes w22_7 { 0%,20.00% {stroke-width:3;animation-timing-function:cubic-bezier(.8,0,.2,1)} 25.38%,100% {stroke-width:11} }
+  @keyframes o22_7 { 0%,16.92% {opacity:0} 18.46%,100% {opacity:1} }
+  @keyframes d24_7 { 0%,18.46% {stroke-dashoffset:1;animation-timing-function:cubic-bezier(.8,0,.2,1)} 23.85%,100% {stroke-dashoffset:0} }
+  @keyframes w24_7 { 0%,21.54% {stroke-width:3;animation-timing-function:cubic-bezier(.8,0,.2,1)} 26.92%,100% {stroke-width:11} }
+  @keyframes o24_7 { 0%,18.46% {opacity:0} 20.00%,100% {opacity:1} }
+  @keyframes d26_7 { 0%,20.00% {stroke-dashoffset:1;animation-timing-function:cubic-bezier(.8,0,.2,1)} 25.38%,100% {stroke-dashoffset:0} }
+  @keyframes w26_7 { 0%,23.08% {stroke-width:3;animation-timing-function:cubic-bezier(.8,0,.2,1)} 28.46%,100% {stroke-width:11} }
+  @keyframes o26_7 { 0%,20.00% {opacity:0} 21.54%,100% {opacity:1} }
+  @keyframes d28_7 { 0%,21.54% {stroke-dashoffset:1;animation-timing-function:cubic-bezier(.8,0,.2,1)} 26.92%,100% {stroke-dashoffset:0} }
+  @keyframes w28_7 { 0%,24.62% {stroke-width:3;animation-timing-function:cubic-bezier(.8,0,.2,1)} 30.00%,100% {stroke-width:11} }
+  @keyframes o28_7 { 0%,21.54% {opacity:0} 23.08%,100% {opacity:1} }
+  @keyframes pop { 0%,14.62% {transform:scale(0);animation-timing-function:cubic-bezier(.2,1.6,.4,1)} 21.54%,100% {transform:scale(1)} }
+  @keyframes glow { 0%,15.38% {opacity:0;animation-timing-function:ease-out} 24.62%,100% {opacity:1} }
+  @keyframes spark { 0%,19.23% {transform:scale(0);animation-timing-function:ease-out} 24.15% {transform:scale(1.4) rotate(45deg)} 31.54%,100% {transform:scale(1) rotate(90deg)} }
+  @keyframes loopfade { 0%,94% {opacity:1} 100% {opacity:0} }
+  @media (prefers-reduced-motion: reduce) { .halo { animation:none; } }
+</style>
+<defs><radialGradient id="bg" cx=".5" cy=".4" r=".8"><stop offset="0" stop-color="#1c1d25"/><stop offset="1" stop-color="#0D0E12"/></radialGradient></defs>
+<rect x="20" y="10" width="580" height="210" rx="16" fill="url(#bg)"/>
+<g class="all">
+  <g class="ink">
+    <g class="shadow">
+      <!-- H, narrowed and nudged right so it sits close to the a -->
+      <g transform="translate(26 0)">
+        <path pathLength="1" style="animation:d2_10 13.0s infinite, w2_10 13.0s infinite, o2_10 13.0s infinite" d="M38 86C40 58 70 42 96 46C116 50 114 74 106 104C98 134 90 158 84 178"/>
+        <path pathLength="1" style="animation:d5_8 13.0s infinite, w5_8 13.0s infinite, o5_8 13.0s infinite" d="M178 44C168 90 158 140 152 178"/>
+        <path pathLength="1" style="animation:d8_6 13.0s infinite, w8_6 13.0s infinite, o8_6 13.0s infinite" d="M72 132C105 122 140 118 180 120"/>
+      </g>
+      <!-- a + l -->
+      <path pathLength="1" style="animation:d12_11 13.0s infinite, w12_11 13.0s infinite, o12_11 13.0s infinite" d="M262 132C250 118 222 122 216 148C210 172 232 184 248 170C258 160 264 140 266 124C262 150 260 175 276 178C295 178 305 150 312 110C318 80 322 50 312 42C300 36 292 60 292 90C292 130 292 170 310 178C320 182 330 176 338 168"/>
+      <!-- x -->
+      <path pathLength="1" style="animation:d22_7 13.0s infinite, w22_7 13.0s infinite, o22_7 13.0s infinite" d="M430 128C442 122 452 130 456 150C460 172 470 182 486 172"/>
+      <path pathLength="1" style="animation:d24_7 13.0s infinite, w24_7 13.0s infinite, o24_7 13.0s infinite" d="M490 128C476 124 462 140 456 152C450 166 440 182 424 176"/>
+      <!-- x -->
+      <path pathLength="1" style="animation:d26_7 13.0s infinite, w26_7 13.0s infinite, o26_7 13.0s infinite" d="M500 128C512 122 522 130 526 150C530 172 540 182 556 172"/>
+      <path pathLength="1" style="animation:d28_7 13.0s infinite, w28_7 13.0s infinite, o28_7 13.0s infinite" d="M560 128C546 124 532 140 526 152C520 166 510 182 494 176"/>
+    </g>
+    <g id="letters" class="main">
+      <!-- H, narrowed and nudged right so it sits close to the a -->
+      <g transform="translate(26 0)">
+        <path pathLength="1" style="animation:d2_10 13.0s infinite, w2_10 13.0s infinite, o2_10 13.0s infinite" d="M38 86C40 58 70 42 96 46C116 50 114 74 106 104C98 134 90 158 84 178"/>
+        <path pathLength="1" style="animation:d5_8 13.0s infinite, w5_8 13.0s infinite, o5_8 13.0s infinite" d="M178 44C168 90 158 140 152 178"/>
+        <path pathLength="1" style="animation:d8_6 13.0s infinite, w8_6 13.0s infinite, o8_6 13.0s infinite" d="M72 132C105 122 140 118 180 120"/>
+      </g>
+      <!-- a + l -->
+      <path pathLength="1" style="animation:d12_11 13.0s infinite, w12_11 13.0s infinite, o12_11 13.0s infinite" d="M262 132C250 118 222 122 216 148C210 172 232 184 248 170C258 160 264 140 266 124C262 150 260 175 276 178C295 178 305 150 312 110C318 80 322 50 312 42C300 36 292 60 292 90C292 130 292 170 310 178C320 182 330 176 338 168"/>
+      <!-- x -->
+      <path pathLength="1" style="animation:d22_7 13.0s infinite, w22_7 13.0s infinite, o22_7 13.0s infinite" d="M430 128C442 122 452 130 456 150C460 172 470 182 486 172"/>
+      <path pathLength="1" style="animation:d24_7 13.0s infinite, w24_7 13.0s infinite, o24_7 13.0s infinite" d="M490 128C476 124 462 140 456 152C450 166 440 182 424 176"/>
+      <!-- x -->
+      <path pathLength="1" style="animation:d26_7 13.0s infinite, w26_7 13.0s infinite, o26_7 13.0s infinite" d="M500 128C512 122 522 130 526 150C530 172 540 182 556 172"/>
+      <path pathLength="1" style="animation:d28_7 13.0s infinite, w28_7 13.0s infinite, o28_7 13.0s infinite" d="M560 128C546 124 532 140 526 152C520 166 510 182 494 176"/>
+    </g>
+  </g>
+  <defs>
+    <radialGradient id="g-glow">
+      <stop offset=".45" stop-color="#fff" stop-opacity=".95"/>
+      <stop offset=".6" stop-color="#F6B6CF" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#F6B6CF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g-disc" cx=".4" cy=".35">
+      <stop offset="0" stop-color="#22232b"/>
+      <stop offset="1" stop-color="#050507"/>
+    </radialGradient>
+    <ellipse id="pt" cx="0" cy="-36" rx="5" ry="8"/>
+  </defs>
+
+
+  <!-- eclipse replaces the "o" -->
+  <g class="eclipse">
+    <circle class="glow" cx="385" cy="150" r="58" fill="url(#g-glow)"/>
+    <g class="halo" fill="#fff" opacity=".9" ><use href="#pt" fill="#F6B6CF" transform="translate(385 150) rotate(0.0) scale(0.80)"/><use href="#pt" fill="#fff" transform="translate(385 150) rotate(22.4) scale(0.92)"/><use href="#pt" fill="#fff" transform="translate(385 150) rotate(32.7) scale(1.04)"/><use href="#pt" fill="#F6B6CF" transform="translate(385 150) rotate(55.1) scale(1.16)"/><use href="#pt" fill="#fff" transform="translate(385 150) rotate(65.5) scale(0.80)"/><use href="#pt" fill="#fff" transform="translate(385 150) rotate(87.8) scale(0.92)"/><use href="#pt" fill="#F6B6CF" transform="translate(385 150) rotate(98.2) scale(1.04)"/><use href="#pt" fill="#fff" transform="translate(385 150) rotate(120.5) scale(1.16)"/><use href="#pt" fill="#fff" transform="translate(385 150) rotate(130.9) scale(0.80)"/><use href="#pt" fill="#F6B6CF" transform="translate(385 150) rotate(153.3) scale(0.92)"/><use href="#pt" fill="#fff" transform="translate(385 150) rotate(163.6) scale(1.04)"/><use href="#pt" fill="#fff" transform="translate(385 150) rotate(186.0) scale(1.16)"/><use href="#pt" fill="#F6B6CF" transform="translate(385 150) rotate(196.4) scale(0.80)"/><use href="#pt" fill="#fff" transform="translate(385 150) rotate(218.7) scale(0.92)"/><use href="#pt" fill="#fff" transform="translate(385 150) rotate(229.1) scale(1.04)"/><use href="#pt" fill="#F6B6CF" transform="translate(385 150) rotate(251.5) scale(1.16)"/><use href="#pt" fill="#fff" transform="translate(385 150) rotate(261.8) scale(0.80)"/><use href="#pt" fill="#fff" transform="translate(385 150) rotate(284.2) scale(0.92)"/><use href="#pt" fill="#F6B6CF" transform="translate(385 150) rotate(294.5) scale(1.04)"/><use href="#pt" fill="#fff" transform="translate(385 150) rotate(316.9) scale(1.16)"/><use href="#pt" fill="#fff" transform="translate(385 150) rotate(327.3) scale(0.80)"/><use href="#pt" fill="#F6B6CF" transform="translate(385 150) rotate(349.6) scale(0.92)"/></g>
+    <circle cx="385" cy="150" r="27" fill="url(#g-disc)"/>
+    <path class="spark" fill="#fff" d="M404 116l2 10 10 2-10 2-2 10-2-10-10-2 10-2z"/>
+  </g>
+
+  <!-- tiny sakura dots that appear once the letters are inked -->
+  <g fill="#fff" opacity=".9">
+    <circle class="bloom" style="animation:b14 13.0s infinite" cx="119" cy="150" r="2.2"/>
+    <circle class="bloom" style="animation:b16 13.0s infinite" cx="194" cy="100" r="2.2"/>
+    <circle class="bloom" style="animation:b19 13.0s infinite" cx="230" cy="168" r="2.2"/>
+    <circle class="bloom" style="animation:b21 13.0s infinite" cx="307" cy="80" r="2.2"/>
+    <circle class="bloom" style="animation:b33 13.0s infinite" cx="468" cy="168" r="2.2"/>
+    <circle class="bloom" style="animation:b35 13.0s infinite" cx="535" cy="140" r="2.2"/>
+  </g>
+</g>
+</svg>
