@@ -44,7 +44,6 @@
   @keyframes glow { 0%,15.38% {opacity:0;animation-timing-function:ease-out} 24.62%,100% {opacity:1} }
   @keyframes spark { 0%,19.23% {transform:scale(0);animation-timing-function:ease-out} 24.15% {transform:scale(1.4) rotate(45deg)} 31.54%,100% {transform:scale(1) rotate(90deg)} }
   @keyframes loopfade { 0%,94% {opacity:1} 100% {opacity:0} }
-  @media (prefers-reduced-motion: reduce) { .halo { animation:none; } }
 </style>
 <defs><radialGradient id="bg" cx=".5" cy=".4" r=".8"><stop offset="0" stop-color="#1c1d25"/><stop offset="1" stop-color="#0D0E12"/></radialGradient></defs>
 <rect x="20" y="10" width="580" height="210" rx="16" fill="url(#bg)"/>
