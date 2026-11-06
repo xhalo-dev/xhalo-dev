@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="haloxx.svg" width="720" alt="Haloxx">
+  <img src="haloxx-loop.svg" width="720" alt="Haloxx">
 </p>
 
 <p align="center">
